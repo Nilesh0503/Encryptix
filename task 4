@@ -1,0 +1,10 @@
+import random
+import string
+
+limit=int(input("enter the word limit of new password:"))
+all_characters = string.ascii_letters + string.punctuation
+random_character = random.choice(all_characters)
+for i in range (1,limit):
+    character = random.choice(all_characters)
+    password=character
+    print(password,end=" ")
